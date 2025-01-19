@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            height: 100vh;
+            gap: 5px;
+        }
+
+        section {
+            display: flex;
+            padding: 10px;
+            background-color: rgb(231, 227, 227);
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 300px;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        div {
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 10px;
+            width: 100px;
+            background-color: rgb(172, 171, 171);
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .column div {
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>Item 1</section>
+        <section>
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </section>
+        <section>
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </section>
+        <section>Item 4</section>
+        <section>Item 5</section>
+        <section class="column">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+        </section>
+        <section>
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+        </section>
+        <section>Item 8</section>
+        <section>
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </section>
+        <section>Item 10</section>
+        <section>Item 11</section>
+        <section>
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </section>
+    </main>
+</body>
+</html>
