@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    z-index: 2;
+    padding: 10px  200px;
+    position: fixed;
+    gap: 20vw;
+
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition:0.25s ease-out;
+    border-radius: 20px
+}
+
+nav a:hover {
+    background-color: lightpink;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition:0.25s ease-in;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #395154, #000000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.herotext {
+    display: flex;
+    gap: 250px;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero {
+    height: 50vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+.arrows {
+    display: flex;
+    gap: 20px;
+}
+
+.arrows div {
+    font-size: 40px;
+    align-self: flex-end;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    padding:5px 10px;
+}
+
+#heroimage {
+    position: relative;
+    top: -40px;
+    z-index: -1;
+    width: 100%;
+}
+
+main {
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+    position: relative;
+    padding: 40px;
+  
+
+}
+
+main > section {
+    align-self: center;
+}
+
+.description {
+    width: 60vw;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.price {
+    padding: 10px ;
+    font-weight: 1px;
+    font-size: 25px;
+}
+
+.pricenotice {
+    color: rgb(75, 70, 70);
+    font-size: 15px;
+}
+
+.about > button {
+    margin-top: 20px;
+    background-color: lightpink;
+    border: 1px solid  lightpink;
+    padding: 15px 50px;
+    font-size: 25px;
+    border-radius: 10vw;
+    transition: 0.25s ease-in;  
+}
+
+.about > button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid  black;
+    transition: 0.25s ease-in;
+
+}
+
+button > div {
+    font-size: 10px
+}
+
+.gallery {
+    display: grid;
+    padding: 2%;
+    width: 85vw;
+    height: 80vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 2%;
+}
+
+#video {
+    grid-column: 1 / 4;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+
+}
+
+table {
+    height: 20vw;
+    width: 40vw;
+    font-size: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    padding-left: 3vw;
+}
+.black {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.grey {
+    background-color: rgb(217, 216, 216);
+}
+
+td:hover {
+    background-color: rgb(179, 177, 177);
+}
+
+.black:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.specstext {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Enquiry {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, #629399, #7e858a);
+    color: white;
+}
+
+footer {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: black;
+    color: rgb(222, 221, 221);
+}
+
+.Disclaimer {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.Copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.form {
+    height: 40vh;
+}
+
+form div {
+    grid-column: 2/ 4  ;
+    place-self: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 20px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+textarea {
+    grid-column: 1/5 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    background-color: lightpink;
+    border: 1px solid  lightpink;
+    padding: 15px 40px;
+    font-size: 25px;
+    border-radius: 10vw;
+    transition: 0.25s ease-in; 
+    display: block;
+}
+
+form button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid  black;
+    transition: 0.25s ease-in;
+
+}
+
+input {
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 0px;
+}
+
+.line {
+    background-color: black;
+    width: 15rem;
+    height: 0.2rem;
+    margin: 1rem;
+    border-radius: 10%;
+}
